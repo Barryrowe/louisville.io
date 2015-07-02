@@ -1,12 +1,12 @@
 <div class="event {{#if expired}}expired{{/if}}">
 	<div class="event-title">
 		<div class="event-and-group">
+			<h3><a href="{{groupUrl}}">{{groupName}}</a></h3>
 			<h2>
 				{{#if URL}}<a href="{{URL}}">{{/if}}
 					{{SUMMARY}}
 				{{#if URL}}</a>{{/if}}
 			</h2>
-			<h3><a href="{{groupUrl}}">{{groupName}}</a></h3>
 		</div>
 		<div class="group-logo">
 			<a href="{{groupUrl}}">
@@ -14,7 +14,9 @@
 			</a>
 		</div>
 	</div>
-	<p>{{DESCRIPTION}}</p>
+<div class="group-photo" style="background:url(http://placehold.it/640x480) center center no-repeat;">
+</div>
+	<!-- <p>{{DESCRIPTION}}</p> -->
 	<div class="timeandplace">
 		{{#if LOCATION}}
 		<div class="location">

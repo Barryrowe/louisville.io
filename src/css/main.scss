@@ -3,7 +3,7 @@
 
 
 $accent: #4180AB;
-$grey: #82837E;
+$grey: #202020;
 $rounded: 15px;
 
 body {
@@ -40,7 +40,7 @@ a{
 	width: 300px;
 	margin: 10px;
 	border: 1px solid lighten($grey, 1%);
-	padding: 10px 15px;
+	padding:0px;
 	background-color: #fff;
 	word-wrap: break-word;
 	display: flex;
@@ -54,11 +54,10 @@ a{
 
 .event h2 , .event h3 {
 	margin: 0 0 .5em;
+	font-size: 1.1rem;
 }
 
-.event h2 a, .event h3 a {
-	text-decoration: none;
-}
+
 
 .event a {
 	color: $accent;
@@ -72,15 +71,36 @@ a{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	padding: 10px 15px;
+	a{
+			text-decoration: none;
+	}
+	h3 a{
+		color: lighten($grey, 20%);
+			font-size: .8rem;
+	}
+	h2 a{
+		color: $grey;
+			font-size: 1.1rem;
+	}
+	.group-logo {
+		width: 75px;
+		height: 75px;
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+	}
+
 }
 
-.event .group-logo {
-	width: 75px;
-	flex: 0 0 auto;
+.group-photo{
+	height: 150px;
 }
 
 .event .group-logo img {
+	vertical-align: middle;
 	width: 100%;
+	display: inline-block;
 }
 
 .event p {
